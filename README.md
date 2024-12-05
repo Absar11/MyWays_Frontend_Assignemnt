@@ -1,37 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Interview Application
 
-## Getting Started
+This is a Next.js application for conducting AI interviews. The application starts with a user information form where the user can enter details like name, mobile number, email, gender, and college name. After the form submission, the user is redirected to a page displaying the interview instructions and proceeding to a permissions check.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **User Information Form**:
+  - Collects user details like name, mobile number, email, gender, and college name.
+- **Home Screen**:
+  - Displays AI interview instructions for the user.
+- **Permissions Check Page**:
+  - Ensures the user has necessary permissions for the interview.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js**: A React-based framework for building server-side rendered and statically generated web applications.
+- **TypeScript (tsx)**: A statically typed superset of JavaScript, providing type safety and enhanced developer experience.
+- **Tailwind CSS**: A utility-first CSS framework for creating responsive, modern UI components quickly.
+- **React**: A JavaScript library for building user interfaces.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+Follow these steps to set up and run the project locally.
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/Absar11/MyWays_Frontend_Assignment.git
+   cd MyWays_Frontend_Assignment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Install dependencies::
 
-## Deploy on Vercel
+   ```bash
+   npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Run the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# MyWays_Frontend_Assignemnt
+   ```bash
+   npm run dev
+
+The application will be available at http://localhost:3000.
+
