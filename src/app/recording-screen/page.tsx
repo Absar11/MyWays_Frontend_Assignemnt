@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
-import Confetti from "react-confetti";
 
 const Record = () => {
   const [isRecording, setIsRecording] = useState(false);
@@ -132,17 +131,34 @@ const Record = () => {
           )}
         </div>
       ) : (
-        <div className="w-full max-w-lg text-center p-6 bg-white rounded-lg shadow-md ">
-          <Confetti className="absolute inset-0 z-10" />
-          <h1 className="text-2xl font-semibold text-gray-700 mb-4">
-            Test Completed
-          </h1>
-          <p className="text-gray-500 mb-6">
-            Thank you for completing the AI interview!
-          </p>
+        <div className="w-full max-w-lg text-center p-6 bg-white rounded-lg shadow-md">
+          <div className="flex flex-col items-center justify-center space-y-4">
+            <div className="flex items-center justify-center w-20 h-20 bg-green-500 text-white rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="2"
+                stroke="currentColor"
+                className="w-10 h-10"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </div>
+            <h1 className="text-2xl font-semibold text-gray-700">
+              Test Completed
+            </h1>
+            <p className="text-gray-500">
+              Thank you for completing the AI interview!
+            </p>
+          </div>
           <Link
             href="/"
-            className="inline-block py-3 px-6 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+            className="inline-block mt-6 py-3 px-6 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
           >
             Go to Home
           </Link>
