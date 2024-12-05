@@ -10,6 +10,7 @@ const CheckPermissionScreen = () => {
       await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
       setPermissionsGranted(true);
     } catch (error) {
+      console.error('Permission error:', error); // Logging the error for debugging
       alert('Please enable audio and video permissions.');
     }
   };
